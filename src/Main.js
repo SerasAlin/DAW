@@ -3,31 +3,38 @@ import React, { Component } from "react";
 import {
     Route,
     NavLink,
-    HashRouter
+    HashRouter,
 } from "react-router-dom";
 import Home from "./Components/Home";
 import Doctors from "./Components/Doctors";
 import Hospitals from "./Components/Hospitals";
 import Contact from "./Components/Contact";
-
+import PropTypes from "prop-types"
 import logo1 from "./img/logo1.jpg"
 import logo2 from "./img/logo2.png"
-import home from "./img/home.png"
+import home from "./img/home.svg"
 import contact from "./img/contact.png"
 import {IntlProvider,FormattedMessage} from "react-intl"
+import connect from "react-redux/es/connect/connect";
+import {setLocale} from "./actions/locale"
+import messages from "./messages"
 
 class Main extends Component {
     render() {
+        const {lang} = this.props;
         return (
-            <IntlProvider>
+            <IntlProvider locale={lang} messages={messages[lang]}>
 
             <HashRouter>
             <div>
-                <h1>
+                <h1 className = "myTitle">
+
                     <FormattedMessage
                         id="Main.Title"
                         defaultMessage="Rate your doctors and hospitals"
                     />
+
+
                 </h1>
                 <ul className="header">
                     <li><NavLink exact to="/">
@@ -45,13 +52,17 @@ class Main extends Component {
 
                         <img className = "images" src={contact} alt="contact" />
                     </NavLink></li>
-                    <text className="select">
-                        Select language:
-                    <select className="flag-text" data-width="fit">
-                        <option >English</option>
-                        <option >Romanian</option>
-                    </select>
-                    </text>
+                    <span className="select">
+                        Select language :
+                        {" "}
+                            <a role="button" onClick={() => this.props.setLocale("en")}>
+                            English {" "}
+                            </a>
+                            |
+                            <a role="button" onClick={() => this.props.setLocale("ro")}>
+                            {" "} Romanian
+                        </a>
+                    </span>
 
                 </ul>
 
@@ -70,4 +81,15 @@ class Main extends Component {
     }
 }
 
-export default Main;
+Main.propTypes={
+    lang:PropTypes.string.isRequired,
+    setLocale : PropTypes.func.isRequired
+};
+
+function mapStateToProps(state) {
+    return{
+        lang: state.locale.lang
+    };
+}
+
+export default connect(mapStateToProps, {setLocale} , null ,{pure : false})(Main);

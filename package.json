@@ -5,13 +5,12 @@
   "dependencies": {
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
+    "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.5",
     "babel-plugin-named-asset-import": "^0.3.1",
-    "babel-plugin-react-intl": "^3.0.1",
-    "babel-preset-react-app": "^7.0.2",
     "bfj": "6.1.1",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "1.0.0",
@@ -27,26 +26,39 @@
     "file-loader": "2.0.0",
     "fronto-localize": "^1.0.2",
     "fs-extra": "7.0.1",
+    "glob": "latest",
+    "history": "latest",
     "html-webpack-plugin": "4.0.0-alpha.2",
+    "i18next": "^15.0.6",
     "identity-obj-proxy": "3.0.0",
     "jest": "23.6.0",
     "jest-pnp-resolver": "1.0.2",
     "jest-resolve": "23.6.0",
     "jest-watch-typeahead": "^0.2.1",
+    "lodash": "latest",
     "mini-css-extract-plugin": "0.5.0",
+    "mkdirp": "^0.5.1",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "6.5.0",
     "postcss-safe-parser": "4.0.1",
+    "prop-types": "latest",
     "react": "^16.8.4",
     "react-app-polyfill": "^0.2.2",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.4",
     "react-flags-select": "^1.1.10",
     "react-intl": "^2.8.0",
+    "react-native-locale-detector": "^1.0.1",
+    "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.0.2",
+    "redux-thunk": "^2.3.0",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
@@ -58,9 +70,10 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "start": "node scripts/start.js",
+    "test": "node scripts/test.js",
+    "extract-messages": "set NODE_ENV=production&& babel ./src >NUL"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -115,5 +128,11 @@
       "C:\\Users\\Alin\\Desktop\\Facultate\\An4\\Sem2\\DAW\\DAW-master\\DAW-master\\node_modules\\jest-watch-typeahead\\filename.js",
       "C:\\Users\\Alin\\Desktop\\Facultate\\An4\\Sem2\\DAW\\DAW-master\\DAW-master\\node_modules\\jest-watch-typeahead\\testname.js"
     ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-react-intl": "^3.0.1",
+    "babel-preset-react-app": "^7.0.2",
+    "redux-devtools": "^3.5.0"
   }
 }

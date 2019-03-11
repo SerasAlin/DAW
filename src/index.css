@@ -16,7 +16,7 @@ ul.header li {
   margin: 0;
 }
 ul.header {
-  background-color: floralwhite;
+  background-color: lightblue;
   padding: 0;
 }
 ul.header li a {
@@ -45,7 +45,10 @@ ul.header li a {
   height:30px;
 }
 .select{
-  margin-left: 630px;
+  margin-left: 560px;
 }
 .flag-text {
   margin-left: 10px; }
+.myTitle{
+  background-color: lightblue;
+}
