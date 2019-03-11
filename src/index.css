@@ -1,0 +1,51 @@
+
+body {
+  background-size: cover;
+  background: url("./img/bkimage.jpg") ;
+  padding: 20px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+
+  font-family: sans-serif;
+  color: black;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: floralwhite;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF ;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+.content {
+  background-color: floralwhite;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.active {
+  background-color: #0099FF;
+}
+.images{
+  width: 30px;
+  height:30px;
+}
+.select{
+  margin-left: 630px;
+}
+.flag-text {
+  margin-left: 10px; }
