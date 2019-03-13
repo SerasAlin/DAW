@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "Homework 1",
+    "field": "DAW",
+    "description" : "Proiectați și implementați o interfața cu utilizatorul folosind pagini web pentru o aplicație de evaluare si\nclasificare a medicilor si a spitalelor din Romania. Operații permise de aplicație:\n1. Afișare informații despre unități medicale (nume, tip unitate, locație, sigla) 3p\n2. Buton/link către pagina detalii despre medicii ce activează într-o unitate medicala (nume, specializare,\nan absolvire, poza profil) 3p\n3. Selectare Limba (RO si EN). Salvarea preferinței utilizatorilor pentru limba in care se afișează informația\nse va face folosind HTTP Cookies sau HTML 5 Web Storage 3p"
+  }
+]
+
+

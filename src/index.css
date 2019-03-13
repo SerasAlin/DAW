@@ -1,13 +1,12 @@
 
 body {
   background-size: cover;
-  background: url("./img/bkimage.jpg") ;
+  background: url("./img/bkimage.png") ;
   padding: 20px;
-  margin: 0;
 }
 h1, h2, p, ul, li {
 
-  font-family: sans-serif;
+  font-family: "Corbel", sans-serif;
   color: black;
 }
 ul.header li {
@@ -16,18 +15,18 @@ ul.header li {
   margin: 0;
 }
 ul.header {
-  background-color: lightblue;
+
   padding: 0;
 }
 ul.header li a {
-  color: #FFF ;
+  color: #ffffff ;
   font-weight: bold;
   text-decoration: none;
   padding: 10px;
   display: inline-block;
 }
 .content {
-  background-color: floralwhite;
+
   padding: 20px;
 }
 .content h2 {
@@ -38,17 +37,17 @@ ul.header li a {
   margin-bottom: 10px;
 }
 .active {
-  background-color: #0099FF;
+  background-color: lightskyblue;
 }
 .images{
   width: 30px;
   height:30px;
 }
 .select{
-  margin-left: 560px;
+  margin-left: 950px;
 }
 .flag-text {
   margin-left: 10px; }
 .myTitle{
-  background-color: lightblue;
+
 }
