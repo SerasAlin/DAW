@@ -1,73 +1,50 @@
 import React, { Component } from "react";
 import { FormattedMessage } from "react-intl";
+import "bootstrap/dist/css/bootstrap.css";
+import logo2 from "../img/logo2.png";
+import Table from "react-bootstrap/es/Table";
+
+const jsonData = require("../dummyInfo/DoctorData");
+
+const docList = jsonData.doctors.map((item, index) => (
+  <tr key={"key" + index}>
+    <td align="center">{item.ID}</td>
+    <td align="center">{item.NAME}</td>
+    <td align="center">{item.ACTIVITY}</td>
+    <td align="center">{item.HOSPITAL}</td>
+  </tr>
+));
 
 class Doctors extends Component {
-  state = {
-    isLoading: true,
-    doctors: [],
-    error: null
-  };
-
-  fetchUsers() {
-    // Where we're fetching data from
-    fetch("http://127.0.0.1:8080/src/dummyInfo/DoctorData.json")
-      // We get the API response and receive data in JSON format...
-      .then(response => response.json())
-      // ...then we update the users state
-      .then(data =>
-        this.setState({
-          doctors: data,
-          isLoading: false
-        })
-      )
-
-      // Catch any errors we hit and update the app
-      .catch(error => this.setState({ error, isLoading: false }));
-  }
-
-  componentDidMount() {
-    this.fetchUsers();
-  }
+  // componentDidMount() {
+  //   axios.get("http://localhost:4001/doctors").then(response => {
+  //     this.setState({
+  //       products: response.data
+  //     });
+  //   });
+  // }
 
   render() {
-    const { isLoading, doctors, error } = this.state;
-
     return (
       <div>
-        <h2>
+        <h2 className="h2">
+          <img className="images" src={logo2} alt={""} />
           <FormattedMessage id="Doctors.Title" defaultMessage="Doctors" />
         </h2>
 
-        {error ? <p>{error.message}</p> : null}
-
-        {!isLoading ? (
-          doctors.map(doctors => {
-            const {
-              id,
-              name,
-              field,
-              description,
-              hospital,
-              location
-            } = doctors;
-            return (
-              <div key={id}>
-                <p>Name: {name}</p>
-                <p>Field: {field}</p>
-                <p>Description: {description}</p>
-                <p>Hospital: {hospital}</p>
-                <p>Location: {location}</p>
-                <hr />
-              </div>
-            );
-          })
-        ) : (
-          // If there is a delay in data, let's let the user know it's loading
-          <h3>Loading...</h3>
-        )}
-        <a href="https://www.reginamaria.ro/medici/prof-dr-copaescu-catalin">
-          WebSite
-        </a>
+        <div className="content">
+          <Table className="myTable " striped bordered hover variant="light">
+            <thead>
+              <tr>
+                <td>ID</td>
+                <td>NAME</td>
+                <td>ACTIVITY</td>
+                <td>HOSPITAL</td>
+              </tr>
+            </thead>
+            <tbody>{docList}</tbody>
+          </Table>
+        </div>
       </div>
     );
   }

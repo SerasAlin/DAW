@@ -1,12 +1,74 @@
-[
-  {
-    "id": 1,
-    "name": "PROF. DR. COPAESCU CATALIN",
-    "field": "Professor | CHIRURGIE GENERALA",
-    "description": "GI & Metabolic Surgery: over 700 procedures per year - mostly laparoscopic. Pioneering and developing metabolic surgery, laparoscopic colorectal surgery, laparoscopic hernia, GERD, SILS and NOTES in Romania, it was offered the opportunity to gain extensive experience for: Bariatric & Metabolic surgery, laparoscopic hernia repair, laparoscopic treatment of GERD, primary & incisional Hernia, laparoscopic Colorectal surgery, endoscopic revisional  surgery.",
-    "hospital" : "Regina-Maria",
-    "location": "Cluj-Napoca"
-  }
-]
+{
+  "doctors":[
+{
+  "ID": 1,
+  "NAME": "PROF. DR. COPAESCU CATALIN",
+  "ACTIVITY": "Professor | CHIRURGIE GENERALA",
+  "HOSPITAL": "Regina-Maria",
+  "IMG": "../img/1.jpeg"
+},
+{
+"ID": 2,
+"NAME": "DR. RAHIMIAN HADI",
+"ACTIVITY": "GINECOLOGIE",
+"HOSPITAL": "Regina-Maria",
+  "IMG": "../img/2.jpeg"
+},
+{
+"ID": 3,
+"NAME": "PROF. UNIV. DR. BRATILA PETRE CORNEL",
+"ACTIVITY": "Profesor | OBSTETRICA - GINECOLOGIE",
+"HOSPITAL": "Regina-Maria",
+  "IMG": "../img/3.png"
+},
+{
+"ID": 4,
+"NAME": "DR. SURLEA VERONICA",
+"ACTIVITY": "Medic primar | PNEUMOLOGIE",
+"HOSPITAL" : "Regina-Maria",
+  "IMG": "../img/4.png"
+},
+{
+"ID": 5,
+"NAME": "DR. SCHEINER MIHAELA",
+"ACTIVITY": "Medic primar | NEONATOLOGIE",
+"HOSPITAL": "Regina-Maria",
+  "IMG": "../img/5.png"
+},
+{
+"ID": 6,
+"NAME": "DR. MAZEN ABOU-KANSOUL",
+"ACTIVITY": "Medic primar | STOMATOLOGIE GENERALA",
+"HOSPITAL": "Dentalux",
+  "IMG": "../img/6.jpeg"
+},
 
-
+{
+"ID": 7,
+"NAME": "DR. CRISTIAN IONEL ABRUDAN",
+"ACTIVITY": "Medic primar | STOMATOLOGIE GENERALA",
+"HOSPITAL": "Certendent",
+  "IMG": "../img/7.png"
+},
+{
+"ID": 8,
+"NAME": "DR. LUCIA ADAM",
+"ACTIVITY": "Medic primar | OBSTRETICA GINECOLOGIE",
+"HOSPITAL": "Medcenter",
+  "IMG": "../img/8.jpeg"
+},
+{
+"ID": 9,
+"NAME": "DR. CAMELIA IOANA ALB",
+"ACTIVITY": "Medic primar | STOMATOLOGIE GENERALA",
+"HOSPITAL" : "Sanodent",
+  "IMG": "../img/9.jpeg"
+},
+{
+"ID": 10,
+"NAME": "DR. MELANINA RODICA AIZIER",
+"ACTIVITY": "Medic primar | NEFROLOGIE",
+"HOSPITAL": "Rena Clinic",
+  "IMG": "../img/10.jpeg"
+}]
+}

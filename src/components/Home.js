@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FormattedMessage } from "react-intl";
+import book from "../img/book.svg";
 
 class Home extends Component {
   state = {
@@ -33,7 +34,8 @@ class Home extends Component {
     const { isLoading, home, error } = this.state;
     return (
       <div>
-        <h2>
+        <h2 className="h2">
+          <img className="images" src={book} alt={""} />
           <FormattedMessage id="Home.Title" defaultMessage="Homework 1 DAW" />
         </h2>
         {error ? <p>{error.message}</p> : null}
@@ -42,7 +44,7 @@ class Home extends Component {
           home.map(home => {
             const { id, name, field, description } = home;
             return (
-              <div key={id}>
+              <div className="content2" key={id}>
                 <p>Name: {name}</p>
                 <p>Field: {field}</p>
                 <p>Description: {description}</p>

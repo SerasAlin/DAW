@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FormattedMessage } from "react-intl";
+import contactp from "../img/contact.svg";
 
 class Doctors extends Component {
   state = {
@@ -33,7 +34,9 @@ class Doctors extends Component {
     const { isLoading, contact, error } = this.state;
     return (
       <div>
-        <h2>
+        <h2 className="h2">
+          <img className="images" src={contactp} alt={""} />
+
           <FormattedMessage id="Contact.Title" defaultMessage="Contact" />
         </h2>
 
@@ -43,7 +46,7 @@ class Doctors extends Component {
           contact.map(contact => {
             const { id, name, field, email, location } = contact;
             return (
-              <div key={id}>
+              <div className="content2" key={id}>
                 <p>Name: {name}</p>
                 <p>Field: {field}</p>
                 <p>Email: {email}</p>

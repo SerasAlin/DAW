@@ -1,11 +1,51 @@
-[
+{
+   "hospitals": [
   {
-    "id": 1,
-    "name": "Regina Maria",
-    "field": "Personal health care",
-    "description": "Your doctors always by your side",
-    "location": "Cluj-Napoca"
-  }
-]
+    "ID": 1,
+    "NAME": "Regina-Maria",
+    "FIELD": "General medicine",
+    "PRICING": "$$$",
+    "LOCATION": "Cluj-Napoca"
+  },
+  {
+    "ID": 2,
+    "NAME": "Dentalux",
+    "FIELD": "Dentology",
+    "PRICING": "$$$",
+    "LOCATION": "Cluj-Napoca"
+
+  },
+  {
+    "ID": 3,
+    "NAME": "Certendent",
+    "FIELD": "Dentology",
+    "PRICING": "$$",
+    "LOCATION": "Cluj-Napoca"
+
+  },
+  {
+    "ID": 4,
+    "NAME": "Medcenter",
+    "FIELD": "General medicine",
+    "PRICING": "$$",
+    "LOCATION": "Cluj-Napoca"
+
+  },
+  {
+    "ID": 5,
+    "NAME": "Sanodent",
+    "FIELD": "Personal health care",
+    "PRICING": "$",
+    "LOCATION": "Cluj-Napoca"
+
+  },
+  {
+    "ID": 6,
+    "NAME": "Rena Clinic",
+    "FIELD": "Nefrology",
+    "PRICING": "$$",
+    "LOCATION": "Cluj-Napoca"
+  }]
+    }
 
 
